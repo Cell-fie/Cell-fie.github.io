@@ -402,6 +402,8 @@
     background-size: cover;
     position: relative;
     color: #fff;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
 }
 
 .services__card:nth-child(2){
@@ -442,8 +444,10 @@
 .services__card:hover{
     transform: scale(1.075);
     transition: 0.2s ease-in;
-    cursor: pointer;
+
 }
+
+
 
 @media screen and (max-width: 960px) {
     .services{
