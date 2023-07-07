@@ -1,0 +1,97 @@
+<!-- TO DO:
+    1. Add More Info pages(footer)
+    2. Examples page
+    3. Test page
+ -->
+
+
+ <!DOCTYPE html>
+ <html lang="en">
+     <head>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Cellfie Website</title>
+         <link rel="stylesheet" href="stylesheet.css">
+         
+         <!-- <h1 style='color: black; text-align: center;font-family:'Courier New', Courier, monospace ''>Welcome to Cellfie!</h1> -->
+         <script src="https://kit.fontawesome.com/98827e9f99.js" crossorigin="anonymous"></script>
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+     </head>
+     <body>
+         <!-- <p style="color: black;">TEST</p> -->
+ 
+         <!-- Navbar Section -->
+         <nav class="navbar">
+             <div class="navbar__container">
+                 <a href="/" id="navbar__logo"><i class="fa-solid fa-microscope"></i>CELLFIE</a>
+                 <div class="navbar__toggle" id="mobile-menu">
+                     <span class="bar"></span>
+                     <span class="bar"></span>
+                     <span class="bar"></span>
+                 </div>
+                 <ul class="navbar__menu">
+                     <li class="navbar__item">
+                         <a href="/" class="navbar__links">Home</a>
+                     </li>
+                     <li class="navbar__item">
+                         <a href="/examples.html" class="navbar__links">Examples</a>
+                     </li>
+                     <li class="navbar__item">
+                         <a href="/test.html" class="navbar__links">Test</a>
+                     </li>
+                     <!-- <li class="navbar__btn">
+                         <a href="/" class="button">Sign Up</a>
+                     </li> -->
+                 </ul>
+             </div>
+         </nav>
+         <script src="app.js"></script>
+         <!-- Hero Section -->
+         <div class="main">
+             <div class="main__container">
+                 <div class="main__content">
+                     <h1>Well-come to Cellfie</h1>
+                     <h2>Cell Analysis</h2>
+                     <p>This website aims to train researchers to identify cells in a 96-well plate.</p>
+                 </div>
+                 <div class="main__img--container">
+                     <img src="images/undraw_scientist_ft0o.svg" alt="pic" id="main__img">
+                 </div>
+             </div>
+         </div>
+ 
+         <!-- Services Section -->
+         <div class="services">
+             <h1>Learn to identify cells and then test your knowledge!</h1>
+             <div class="services__container">
+                 <div class="services__card">
+                     <h2>See Examples</h2>
+                     <p>Learn how to identify cells and non-cells</p>
+                     <button><a href="examples.html">Get Started</a></button>
+                 </div>
+                 <div class="services__card">
+                     <h2>Take a Test</h2>
+                     <p>Put what you learned to the test</p>
+                     <button><a href="test.html">Get Started</a></button>
+                 </div>
+             </div>
+         </div>
+ 
+         <!-- Footer Section -->
+         <div class="footer__container">
+             <div class="footer__links">
+                 <div class="footer__link--wrapper">
+                     <div class="footer__link--items">
+                         <h2>More Info</h2>
+                         <a href="HowItWorks.html">How it works</a>
+                         <a href="Goals.html">Goals</a>
+                         <a href="Contact.html">Contact</a>
+                     </div>
+                 </div>
+             </div>
+         </div>
+         
+     </body>
+ </html>
