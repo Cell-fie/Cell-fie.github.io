@@ -7,7 +7,7 @@
 }
 
 .navbar{
-    background: #131313;
+    background: #fff;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -31,8 +31,8 @@
 }
 
 #navbar__logo{
-    background-color: #FF8177;
-    background-image: linear-gradient(to top, #FF0844 0%, #FFB199 100%);
+    background-color: #008813;
+    background-image: linear-gradient(to top, #097718 0%, #A3E2AC 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -62,7 +62,7 @@
 }
 
 .navbar__links{
-    color: #FFF;
+    color: #141414;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -91,7 +91,7 @@
     outline: none;
     border-radius: 4px;
     background: #f77062;
-    color: #fff;
+    color: #141414;
 }
 
 .button:hover{
@@ -100,7 +100,7 @@
 }
 
 .navbar__links:hover {
-    color: #f77062;
+    color: #008813;
     transition: all 0.3s ease;
 }
 
@@ -126,10 +126,10 @@
         transition: all 0.5s ease;
         height: 50vh;
         z-index: -1;
-        background: #131313;
+        background: #fff;
     }
     .navbar__menu.active{
-        background-color: #131313;
+        background-color: #fff;
         top: 100%;
         opacity: 1;
         transition: all 0.5s ease;
@@ -147,7 +147,7 @@
         height: 3px;
         margin: 5px auto;
         transition: all 0.3s ease-in-out;
-        background: #fff;
+        background: #141414;
     }
 
     .navbar__item{
@@ -203,7 +203,7 @@
 
 /* Hero Section CSS */
 .main{
-    background-color: #141414;
+    background-color: #fff;
 }
 
 .main__container{
@@ -213,7 +213,7 @@
     justify-self: center;
     margin: 0 auto;
     height: 90vh;
-    background-color: #141414;
+    background-color: #fff;
     z-index: 1;
     width: 100%;
     max-width: 1300px;
@@ -222,8 +222,8 @@
 
 .main__content h1{
     font-size: 4rem;
-    background-color: #ff8177;
-    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background-color: #141414;
+    /* background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%); */
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -234,8 +234,8 @@
 
 .main__content h2{
     font-size: 4rem;
-    background-color: #ff8177;
-    background-image: linear-gradient(to top, #b721ff 0%, #21d4fd 100%);
+    background-color: #141414;
+    /* background-image: linear-gradient(to top, #b721ff 0%, #21d4fd 100%); */
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -245,10 +245,11 @@
 }
 
 .main__content p{
+    padding-top: 2rem;
     margin-top: 1rem;
     font-size: 2rem;
     font-weight: 700;
-    color:#fff
+    color:#141414
 }
 
 .main__btn{
@@ -293,6 +294,7 @@
 
 .main__img--container{
     text-align: center;
+
 }
 
 #main__img{
@@ -358,27 +360,28 @@
 
 /* Services Section CSS */
 .services{
-    background: #141414;
+    background: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100vh;
-
 }
 
 .services h1{
     text-align: center;
     justify-content: center;
-    background-color: #ff8177;
-    background-image: linear-gradient(to right, #ff8177 0%, 
+    background-color: #141414;
+    /* background-image: linear-gradient(to right, #ff8177 0%, 
      #ff867a 0%,
      #ff8c7f 21%, 
      #f99185 52%,
      #cf556c 78%, 
      #b12a5b 100%
-    );
+    ); */
     background-size: 100%;
     margin-bottom: 5rem;
+    margin-top: 0;
+    padding-top: 0;
     font-size: 2.5rem;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -388,7 +391,9 @@
 }
 
 .services__container{
+    background-color: #fff;
     display: flex;
+    align-items: center;
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -410,6 +415,10 @@
     background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%),url('/images/microscope.jpg');
 }
 
+.services__card:nth-child(3){
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%),url('/images/AI_20230215_new\ module_1200x580.jpg');
+}
+
 .services h2{
     position: absolute;
     top: 350px;
@@ -428,7 +437,7 @@
     border: none;
     outline: none;
     border-radius: 4px;
-    background: #f77062;
+    background: #008813;
     position: absolute;
     top: 440px;
     left: 30px;
@@ -441,6 +450,33 @@
     text-decoration: none;
 }
 
+.services__card button:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #C00000;
+    transition: all 0.35s;
+    border-radius: 4px;
+}
+
+.services__card button:hover{
+    color:#fff; 
+}
+.services__card button:hover:after{
+    width: 100%;
+}
+
+.services__card button a{
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-decoration: none;
+}
+
+
 .services__card:hover{
     transform: scale(1.075);
     transition: 0.2s ease-in;
@@ -451,12 +487,12 @@
 
 @media screen and (max-width: 960px) {
     .services{
-        height: 1600px;
+        height: 1900px;
     }
 
     .services h1{
         font-size: 2rem;
-        margin-top: 12rem;
+        margin-top: 1.5rem;
     }
 }
 
@@ -481,8 +517,9 @@
 
 /* Footer CSS */
 .footer__container{
-    background-color: #141414;
-    padding: 5rem 0;
+    background-color: #fff;
+    padding-top: 3;
+    padding-bottom: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -511,31 +548,34 @@
 }
 
 .footer__link--items{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     margin: 16px;
-    text-align: left;
-    width: 160px;
-    box-sizing: border-box;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    /* box-sizing: border-box; */
 }
 
 .footer__link--items h2{
+    align-self: center;
     margin-bottom: 16px;
 }
 
 .footer__link--items > h2{
-    color: #fff;
+    color: #141414;
 }
 
 .footer__link--items a {
-    color: #fff;
+    align-self: center;
+    margin: 2rem;
+    display: inline-block;
+    font-size: 20px;
+    color: #141414;
     text-decoration: none;
     margin-bottom: 0.5rem;    
 }
 
-.footer__link--items:hover{
-    color: blue;
+.footer__link--items a:hover{
+    color: #008813;
     transition: 0.3s ease-out;
 }
 
@@ -551,8 +591,6 @@
     .footer__link--wrapper{
         flex-direction: column;
     }
-
-
 }
 
 @media screen and (max-width: 480px){
@@ -562,27 +600,3 @@
         width: 100%;
     }
 }
-
-
-/*.button-container {
-    This can change the size of button? 
-    display: flex;
-    padding: 30px;
-    margin: 10px 5px;
-}
-
-.container {
-    height: 200px;
-    position: relative;
-    border: 3px solid white;
-
-}
-  
-.center {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-} */
