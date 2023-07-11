@@ -654,7 +654,7 @@
     pointer-events: none;
     transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
     transform: translateY(40px);
-    z-index: 2;
+    z-index: 15;
 }
 
 .dropdown-links a{
@@ -672,14 +672,14 @@
     display: grid;
     grid-template-columns: repeat(2, max-content);
     gap: 5rem;
-    z-index: 3;
+    z-index: 15;
 }
 
 .dropdown-links{
     position: relative;
     display: grid;
     grid-template-columns: repeat(2, max-content);
-    z-index: 4;
+    z-index: 15;
     cursor: pointer;
     left: 55px;
     gap: 1rem;

@@ -22,32 +22,95 @@ document .addEventListener('click', e => {
     })
 })
 
-const drop1 = document.querySelector('#dropdown-links1')
-const dropLinks1 = document.querySelector('.img-1')
+let drop1 = document.querySelector('#dropdown-links1')
+let dropLinks1 = document.querySelector('.img-1')
+let drop2 = document.querySelector('#dropdown-links2')
+let dropLinks2 = document.querySelector('.img-2')
+let drop3 = document.querySelector('#dropdown-links3')
+let dropLinks3 = document.querySelector('.img-3')
+let drop4 = document.querySelector('#dropdown-links4')
+let dropLinks4 = document.querySelector('.img-4')
 
-drop1.addEventListener('click', function(){
-    print(true)
-    dropLinks1.classList.toggle('active');
-    
+window.addEventListener("DOMContentLoaded", (event) => {
+    let drop1 = document.querySelector('#dropdown-links1')
+    let dropLinks1 = document.querySelector('.img-1')
+    if (drop1){
+        drop1.addEventListener('click', function(){
+            dropLinks1.classList.toggle('active');
+            window.addEventListener("DOMContentLoaded", (event) => {
+                if (dropLinks2 && dropLinks2.classList.contains('active')){
+                    dropLinks2.classList.toggle('active')
+                }
+                if (dropLinks3 && dropLinks3.classList.contains('active')){
+                    dropLinks3.classList.toggle('active')
+                }
+                if (dropLinks4 && dropLinks4.classList.contains('active')){
+                    dropLinks4.classList.toggle('active')
+                }
+            });
+        });
+    }
 });
 
-const drop2 = document.querySelector('#dropdown-links2')
-const dropLinks2 = document.querySelector('.img-2')
-
-drop2.addEventListener('click', function(){
-    dropLinks2.classList.toggle('active');
+window.addEventListener("DOMContentLoaded", (event) => {
+    let drop2 = document.querySelector('#dropdown-links2')
+    let dropLinks2 = document.querySelector('.img-2')
+    if (drop2){
+        drop2.addEventListener('click', function(){
+            dropLinks2.classList.toggle('active');
+            window.addEventListener("DOMContentLoaded", (event) => {
+                if (dropLinks1 && dropLinks1.classList.contains('active')){
+                    dropLinks1.classList.toggle('active')
+                }
+                if (dropLinks3 && dropLinks3.classList.contains('active')){
+                    dropLinks3.classList.toggle('active')
+                }
+                if (dropLinks4 && dropLinks4.classList.contains('active')){
+                    dropLinks4.classList.toggle('active')
+                }
+            });
+        });
+    }
 });
 
-const drop3 = document.querySelector('#dropdown-links3')
-const dropLinks3 = document.querySelector('.img-3')
-
-drop3.addEventListener('click', function(){
-    dropLinks3.classList.toggle('active');
+window.addEventListener("DOMContentLoaded", (event) => {
+    let drop3 = document.querySelector('#dropdown-links3')
+    let dropLinks3 = document.querySelector('.img-3')
+    if (drop3){
+        drop3.addEventListener('click', function(){
+            dropLinks3.classList.toggle('active');
+            window.addEventListener("DOMContentLoaded", (event) => {
+                if (dropLinks2 && dropLinks2.classList.contains('active')){
+                    dropLinks2.classList.toggle('active')
+                }
+                if (dropLinks1 && dropLinks1.classList.contains('active')){
+                    dropLinks1.classList.toggle('active')
+                }
+                if (dropLinks4 && dropLinks4.classList.contains('active')){
+                    dropLinks4.classList.toggle('active')
+                }
+            });
+        });
+    }
 });
 
-const drop4 = document.querySelector('#dropdown-links4')
-const dropLinks4 = document.querySelector('.img-4')
-
-drop4.addEventListener('click', function(){
-    dropLinks4.classList.toggle('active');
+window.addEventListener("DOMContentLoaded", (event) => {
+    let drop4 = document.querySelector('#dropdown-links4')
+    let dropLinks4 = document.querySelector('.img-4')
+    if (drop4){
+        drop4.addEventListener('click', function(){
+            dropLinks4.classList.toggle('active');
+            window.addEventListener("DOMContentLoaded", (event) => {
+                if (dropLinks2 && dropLinks2.classList.contains('active')){
+                    dropLinks2.classList.toggle('active')
+                }
+                if (dropLinks3 && dropLinks3.classList.contains('active')){
+                    dropLinks3.classList.toggle('active')
+                }
+                if (dropLinks1 && dropLinks1.classList.contains('active')){
+                    dropLinks1.classList.toggle('active')
+                }
+            });
+        });
+    }
 });
