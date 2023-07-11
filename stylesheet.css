@@ -613,7 +613,7 @@
 .link{
     position: relative;
     color: #fff;
-    padding: 10px 25px;
+    padding: 8px 30px;
     border: none;
     outline: none;
     border-radius: 4px;
@@ -623,11 +623,6 @@
     cursor: pointer;
     top: 50px;
     right: 135px;
-}
-
-.link a{
-    color: #fff;
-    text-decoration: none;
 }
 
 
@@ -649,9 +644,9 @@
 
 .dropdown-menu{
     position: absolute;
-    left: 0px;
-    top: calc(100% + 0.25rem);
-    background-color: white;
+    right: 0px;
+    top: calc(100% + 3.5rem);
+    background-color: #fff;
     padding: 0.75rem;
     border-radius: .25rem;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .2);
@@ -659,6 +654,11 @@
     pointer-events: none;
     transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
     transform: translateY(40px);
+    z-index: 2;
+}
+
+.dropdown-links a{
+    padding: 5px 15px;
 }
 
 .dropdown.active > .link + .dropdown-menu{
@@ -672,12 +672,133 @@
     display: grid;
     grid-template-columns: repeat(2, max-content);
     gap: 5rem;
+    z-index: 3;
 }
 
 .dropdown-links{
     position: relative;
     display: grid;
-    grid-template-columns: repeat(2,max-content);
-    gap: 1rem;
+    grid-template-columns: repeat(2, max-content);
+    z-index: 4;
+    cursor: pointer;
     left: 55px;
+    gap: 1rem;
+}
+
+.dropdown-links a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.dropdown-links span:hover{
+    transform: scale(1.075);
+}
+
+
+.all{
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    top: 150px
+}
+
+.img-container{
+    background-color: transparent;
+    height: 550px;
+    width: 550px;
+    
+}
+
+
+.img-1{
+    position: absolute;
+    align-self: center;
+    background-color:transparent;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    gap: 1rem;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.img-1.active{
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+
+.img-1 img{
+    width: 250px;
+    height: 250px;
+    display: flex;
+}
+
+.img-2{
+    position: absolute;
+    align-self: center;
+    background-color:transparent;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    gap: 1rem;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.img-2.active{
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+
+.img-2 img{
+    width: 250px;
+    height: 250px;
+    display: flex;
+}
+
+.img-3{
+    position: absolute;
+    align-self: center;
+    background-color:transparent;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    gap: 1rem;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.img-3.active{
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+
+.img-3 img{
+    width: 250px;
+    height: 250px;
+    display: flex;
+}
+
+.img-4{
+    position: absolute;
+    align-self: center;
+    background-color:transparent;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    gap: 1rem;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.img-4.active{
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+
+.img-4 img{
+    width: 250px;
+    height: 250px;
+    display: flex;
 }
