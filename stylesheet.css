@@ -709,6 +709,21 @@
     width: 550px;
     
 }
+.img-back{
+    position: absolute;
+    align-self: center;
+    background-color:transparent;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    gap: 1rem;
+}
+
+.img-back img{
+    width: 250px;
+    height: 250px;
+    display: flex;
+}
 
 
 .img-1{
