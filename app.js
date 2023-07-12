@@ -22,95 +22,33 @@ document .addEventListener('click', e => {
     })
 })
 
-let drop1 = document.querySelector('#dropdown-links1')
-let dropLinks1 = document.querySelector('.img-1')
-let drop2 = document.querySelector('#dropdown-links2')
-let dropLinks2 = document.querySelector('.img-2')
-let drop3 = document.querySelector('#dropdown-links3')
-let dropLinks3 = document.querySelector('.img-3')
-let drop4 = document.querySelector('#dropdown-links4')
-let dropLinks4 = document.querySelector('.img-4')
 
+// check if document content is loaded
 window.addEventListener("DOMContentLoaded", (event) => {
-    let drop1 = document.querySelector('#dropdown-links1')
-    let dropLinks1 = document.querySelector('.img-1')
-    if (drop1){
-        drop1.addEventListener('click', function(){
-            dropLinks1.classList.toggle('active');
-            window.addEventListener("DOMContentLoaded", (event) => {
-                if (dropLinks2 && dropLinks2.classList.contains('active')){
-                    dropLinks2.classList.toggle('active')
-                }
-                if (dropLinks3 && dropLinks3.classList.contains('active')){
-                    dropLinks3.classList.toggle('active')
-                }
-                if (dropLinks4 && dropLinks4.classList.contains('active')){
-                    dropLinks4.classList.toggle('active')
-                }
-            });
-        });
-    }
-});
+    // make list to reference each dropdown button
+    const btns = [document.querySelector('#dropdown-links1'), document.querySelector('#dropdown-links2'),document.querySelector('#dropdown-links3'),document.querySelector('#dropdown-links4')]
+    // make list to reference images
+    const links = [document.querySelector('.img-1'), document.querySelector('.img-2'),document.querySelector('.img-3'),document.querySelector('.img-4')]
 
-window.addEventListener("DOMContentLoaded", (event) => {
-    let drop2 = document.querySelector('#dropdown-links2')
-    let dropLinks2 = document.querySelector('.img-2')
-    if (drop2){
-        drop2.addEventListener('click', function(){
-            dropLinks2.classList.toggle('active');
-            window.addEventListener("DOMContentLoaded", (event) => {
-                if (dropLinks1 && dropLinks1.classList.contains('active')){
-                    dropLinks1.classList.toggle('active')
-                }
-                if (dropLinks3 && dropLinks3.classList.contains('active')){
-                    dropLinks3.classList.toggle('active')
-                }
-                if (dropLinks4 && dropLinks4.classList.contains('active')){
-                    dropLinks4.classList.toggle('active')
-                }
-            });
-        });
-    }
-});
-
-window.addEventListener("DOMContentLoaded", (event) => {
-    let drop3 = document.querySelector('#dropdown-links3')
-    let dropLinks3 = document.querySelector('.img-3')
-    if (drop3){
-        drop3.addEventListener('click', function(){
-            dropLinks3.classList.toggle('active');
-            window.addEventListener("DOMContentLoaded", (event) => {
-                if (dropLinks2 && dropLinks2.classList.contains('active')){
-                    dropLinks2.classList.toggle('active')
-                }
-                if (dropLinks1 && dropLinks1.classList.contains('active')){
-                    dropLinks1.classList.toggle('active')
-                }
-                if (dropLinks4 && dropLinks4.classList.contains('active')){
-                    dropLinks4.classList.toggle('active')
-                }
-            });
-        });
-    }
-});
-
-window.addEventListener("DOMContentLoaded", (event) => {
-    let drop4 = document.querySelector('#dropdown-links4')
-    let dropLinks4 = document.querySelector('.img-4')
-    if (drop4){
-        drop4.addEventListener('click', function(){
-            dropLinks4.classList.toggle('active');
-            window.addEventListener("DOMContentLoaded", (event) => {
-                if (dropLinks2 && dropLinks2.classList.contains('active')){
-                    dropLinks2.classList.toggle('active')
-                }
-                if (dropLinks3 && dropLinks3.classList.contains('active')){
-                    dropLinks3.classList.toggle('active')
-                }
-                if (dropLinks1 && dropLinks1.classList.contains('active')){
-                    dropLinks1.classList.toggle('active')
-                }
-            });
+    //make number list to track non-current button indices
+    const nums = [0,1,2,3]
+    
+    //for each button
+    for (let i = 0; i < 4; i++){
+        // when dropdown buttons are clicked...
+        btns[i].addEventListener('click', function(){
+            //remove index of current button from nums list
+            nums.splice(i,1)
+            // if any of the other dropdown images are showing (active), make the image inactive
+            for (let x = 0; x<3; x++){
+                if(links[nums[x]].classList.toggle("active")){
+                    links[nums[x]].classList.toggle("active");
+                };
+            }
+            // mark the current image as active
+            links[i].classList.toggle('active');
+            //add index of checked button to nums list
+            nums.splice(i,0,i)
         });
     }
 });
