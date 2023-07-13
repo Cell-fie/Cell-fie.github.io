@@ -630,6 +630,7 @@
 .content{
     align-items: center;
     justify-content: center;
+    text-align: center;
     position: relative;
     display: flex;
 }
@@ -725,13 +726,17 @@
     justify-content: center;
     position: relative;
     display: flex;
-    top: 150px
+    top: 100px
 }
 
 .img-container{
+    position: relative;
     background-color: transparent;
     height: 550px;
     width: 550px;
+    align-items: center;
+    justify-content: center;
+
     
 }
 .img-back{
@@ -742,6 +747,7 @@
     display: grid;
     grid-template-columns: repeat(2, max-content);
     gap: 1rem;
+    z-index: -1;
 }
 
 .img-back img{
@@ -753,14 +759,9 @@
 
 .img-1{
     position: absolute;
-    align-self: center;
-    background-color:transparent;
-    justify-self: center;
-    display: grid;
-    grid-template-columns: repeat(2, max-content);
-    gap: 1rem;
     opacity: 0;
     transition: all 0.5s ease;
+    z-index: 1;
 }
 
 .img-1.active{
@@ -773,17 +774,11 @@
     height: 250px;
     display: flex;
 }
-
 .img-2{
     position: absolute;
-    align-self: center;
-    background-color:transparent;
-    justify-self: center;
-    display: grid;
-    grid-template-columns: repeat(2, max-content);
-    gap: 1rem;
     opacity: 0;
     transition: all 0.5s ease;
+    z-index: 1;
 }
 
 .img-2.active{
@@ -796,17 +791,11 @@
     height: 250px;
     display: flex;
 }
-
 .img-3{
     position: absolute;
-    align-self: center;
-    background-color:transparent;
-    justify-self: center;
-    display: grid;
-    grid-template-columns: repeat(2, max-content);
-    gap: 1rem;
     opacity: 0;
     transition: all 0.5s ease;
+    z-index: 1;
 }
 
 .img-3.active{
@@ -819,17 +808,11 @@
     height: 250px;
     display: flex;
 }
-
 .img-4{
     position: absolute;
-    align-self: center;
-    background-color:transparent;
-    justify-self: center;
-    display: grid;
-    grid-template-columns: repeat(2, max-content);
-    gap: 1rem;
     opacity: 0;
     transition: all 0.5s ease;
+    z-index: 1;
 }
 
 .img-4.active{
@@ -842,6 +825,8 @@
     height: 250px;
     display: flex;
 }
+
+
 
 .image-list-small {
     font-family: Arial, Helvetica, sans-serif;
