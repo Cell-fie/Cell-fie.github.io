@@ -113,7 +113,8 @@
         z-index: 1;
         width: 100%;
         max-width: 1300px;
-        padding: 0;
+        padding-bottom: 30px;
+
     }
 
     .navbar__menu{
@@ -831,8 +832,7 @@
     display: flex;
 }
 
-
-
+/* Gallery */
 .image-list-small {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0 auto;
@@ -847,9 +847,7 @@
     margin: 0 12px 30px;
   }
   
-  
   /* Photo */
-  
   .image-list-small li > a {
     display: block;
     text-decoration: none;
@@ -869,9 +867,7 @@
     margin-top: 13px;
   }
   
-  
   /* Title */
-  
   .image-list-small .details h3 {
     display: block;
     font-size: 12px;
