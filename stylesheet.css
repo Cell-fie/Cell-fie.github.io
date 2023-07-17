@@ -597,7 +597,7 @@
 
 @media screen and (max-width: 820px) {
     .footer__container{
-        margin-top: 400px;
+        margin-top: 450px;
     }
     .footer__links{
         padding-top: 2rem;
@@ -861,6 +861,7 @@
     outline: 1px solid #d0d0d0;
     box-shadow: 0 2px 1px #DDD;
     object-fit: fill;
+    
   }
   
   .image-list-small .details {
