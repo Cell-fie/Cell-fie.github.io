@@ -584,18 +584,22 @@
 
 .examples .footer__container.zero{
     margin-top: 2000px;
+    transition: all 0.5s ease;
 }
 
 .examples .footer__container.one{
     margin-top: 2300px;
+    transition: all 0.5s ease;
 }
 
 .examples .footer__container.two{
     margin-top: 3150px;
+    transition: all 0.5s ease;
 }
 
 .examples .footer__container.three{
     margin-top: 50px;
+    transition: all 0.5s ease;
 }
 
 #footer__logo{
