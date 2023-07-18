@@ -254,6 +254,36 @@
     color:#141414
 }
 
+.main__content ol{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    justify-self: center;
+    text-align: center;
+    top: 25px;
+    font-size: 1.25rem;
+}
+
+.main__content li{
+    margin-bottom: 10px;
+}
+
+.main__content li span{
+    position: relative;
+    left: 5px;
+}
+
+.main__content a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+}
+
 .main__btn{
     font-size: 1rem;
     background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
@@ -532,8 +562,40 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 400px;
+    margin-top: 0px;
 
+}
+
+.index .footer__container{
+    margin-top: 400px;
+}
+
+.tips .footer__container{
+    margin-top: -100px;
+}
+
+.test .footer__container{
+    margin-top:0;
+}
+
+.examples .footer__container{
+    margin-top: -50px;
+}
+
+.examples .footer__container.zero{
+    margin-top: 2000px;
+}
+
+.examples .footer__container.one{
+    margin-top: 2300px;
+}
+
+.examples .footer__container.two{
+    margin-top: 3150px;
+}
+
+.examples .footer__container.three{
+    margin-top: 50px;
 }
 
 #footer__logo{
@@ -588,22 +650,26 @@
     transition: 0.3s ease-out;
 }
 
-@media screen and (max-width: 1295px) and (min-width: 960px){
-    .footer__container{
+@media screen and (max-width: 1295px){
+    .index .footer__container{
         margin-top: 400px;
     }
 }
 
 @media screen and (max-width:960px){
-    .footer__container{
+    .index .footer__container{
         margin-top: 100px;
     }
+    
 }
 
 
 @media screen and (max-width:865px){
-    .footer__container{
+    .index .footer__container{
         margin-top: 1200px;
+    }
+    .tips .footer__container{
+        margin-top: 0;
     }
 }
 
@@ -623,7 +689,7 @@
 }
 
 @media screen and (max-width: 480px){
-    .footer__container{
+    .index .footer__container{
         margin-top: 900px;
     }
     .footer__link--items{
@@ -634,16 +700,9 @@
 }
 
 @media screen and (max-width: 430px){
-    .footer__container{
+    .index .footer__container{
         margin-top: 1200px;
     }
-    .footer__link--items{
-        margin: 0;
-        padding: 1;
-        width: 100%;
-    }
-}
-@media screen and (max-width: 430px){
     .footer__link--items{
         margin: 0;
         padding: 1;
