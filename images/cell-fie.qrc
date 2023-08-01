@@ -1,0 +1,17 @@
+<RCC>
+  <qresource prefix="IDk">
+    <file>66831.png</file>
+    <file>arrow-point-to-right copy.png</file>
+    <file>arrow-point-to-down.png</file>
+    <file>cells/IMG_4788 3.jpg</file>
+    <file>cells/IMG_4788.jpg</file>
+    <file>cells/IMG_4790 2.jpg</file>
+    <file>cells/IMG_4795 2.jpg</file>
+    <file>cells/IMG_4796 2.jpg</file>
+    <file>cells/IMG_4811 2.HEIC</file>
+    <file>cells/IMG_4821 2.jpg</file>
+    <file>cells/IMG_4823 2.jpg</file>
+    <file>cells/IMG_4830 2.jpg</file>
+    <file>cells/IMG_4833 2.jpg</file>
+  </qresource>
+</RCC>
